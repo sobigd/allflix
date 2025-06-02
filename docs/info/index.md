@@ -12,7 +12,7 @@
 
 ## 먼저 부탁 말씀
 
-이걸로 들으면 [유튜브](https://www.youtube.com/@%EC%B1%85%ED%94%8C%EB%A6%AD%EC%8A%A4_Youtube)나 [팟빵](https://www.podbbang.com/channels/1776166) 등의 조회수가 올라가지 않는다. (공개할까 혼자쓸까 고민한 가장 큰 이유) 최대한 [유튜브](https://www.youtube.com/@%EC%B1%85%ED%94%8C%EB%A6%AD%EC%8A%A4_Youtube)나 [팟빵](https://www.podbbang.com/channels/1776166)을 이용하고 정말 정주행이 너무 불편하다 싶을 때만 사용하자. (하지만 이 앱도 나름 불편하다. 태생이 혼자 쓰려고 만든거라. 대장간의 칼이 제일 무딘 법)
+이걸로 들으면 [유튜브](https://www.youtube.com/@%EC%B1%85%ED%94%8C%EB%A6%AD%EC%8A%A4_Youtube)나 [팟빵](https://www.podbbang.com/channels/1776166) 등에서 책플릭스 조회수가 올라가지 않는다. (공개할까 혼자쓸까 고민한 가장 큰 이유) 최대한 [유튜브](https://www.youtube.com/@%EC%B1%85%ED%94%8C%EB%A6%AD%EC%8A%A4_Youtube)나 [팟빵](https://www.podbbang.com/channels/1776166)을 이용하고 정말 정주행이 너무 불편하다 싶을 때만 사용하자. (하지만 이 앱도 나름 불편하다. 태생이 혼자 쓰려고 만든거라. 대장간의 칼이 제일 무딘 법)
 
 
 <br />
