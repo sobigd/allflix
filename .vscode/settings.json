@@ -1,6 +1,0 @@
-{
-  "markdown-pdf.includeDefaultStyles": false,
-  "markdown-pdf.styles": [
-    "pdf.css"
-  ]
-}

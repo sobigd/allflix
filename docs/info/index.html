@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>책플릭스 몰아듣기</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+<link rel="stylesheet" href="./pdf.css" type="text/css">
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="a-href%22httpssobigdgithubioallflix%22img-srcfaviconsvg-width70pxa-allflix"><a href="https://sobigd.github.io/allflix/"><img src='favicon.svg' width='70px'></a> allflix</h1>
+<h1 id="%EC%B1%85%ED%94%8C%EB%A6%AD%EC%8A%A4-%EB%AA%B0%EC%95%84%EB%93%A3%EA%B8%B0">책플릭스 몰아듣기</h1>
+<h2 id="%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95">사용 방법</h2>
+<p>웹브라우저에서 <a href="https://sobigd.github.io/allflix">https://sobigd.github.io/allflix</a> 으로 접속해 사용.<br>
+계속 웹에 접속해 사용하거나 윈도우앱이나 안드로이드폰, 아이폰 등에 앱으로 등록해 사용 가능.</p>
+<br/>
+<h2 id="%EB%A8%BC%EC%A0%80-%EB%B6%80%ED%83%81-%EB%A7%90%EC%94%80">먼저 부탁 말씀</h2>
+<p>이걸로 들으면 <a href="https://www.youtube.com/@%EC%B1%85%ED%94%8C%EB%A6%AD%EC%8A%A4_Youtube">유튜브</a>나 <a href="https://www.podbbang.com/channels/1776166">팟빵</a> 등에서 책플릭스 조회수가 올라가지 않는다. (공개할까 혼자쓸까 고민한 가장 큰 이유) 최대한 <a href="https://www.youtube.com/@%EC%B1%85%ED%94%8C%EB%A6%AD%EC%8A%A4_Youtube">유튜브</a>나 <a href="https://www.podbbang.com/channels/1776166">팟빵</a>을 이용하고 정말 정주행이 너무 불편하다 싶을 때만 사용하자. (하지만 이 앱도 나름 불편하다. 태생이 혼자 쓰려고 만든거라. 대장간의 칼이 제일 무딘 법)</p>
+<br />
+<h2 id="%EB%A7%8C%EB%93%A0-%EC%9D%B4%EC%9C%A0">만든 이유</h2>
+<p>책플릭스를 <strong>첫 화부터 정주행</strong> 하려는데 굉장히 번거롭고 어디까지 들었는지 적어놓는 것도 일이고, 이렇게 하려면 꼭 한 개 에피소드 단위로 들어야 해서.. 에피소드의 중간 언제라도 멈추고 그 위치부터 다시 듣기 위해 <strong>책플릭스 정주행 전용 앱</strong>을 만들어 봄.</p>
+<br/>
+<h2 id="%EB%A1%9C%EA%B3%A0">로고</h2>
+<p><img src='img/20250531204826.png' width='70px'> 책플릭스 로고 original을 패러디. <a href="https://sobigd.github.io/allflix/"><img src='favicon.svg' width='70px'></a></p>
+<br/>
+<h2 id="%EA%B8%B0%EB%B3%B8-%EB%8F%99%EC%9E%91">기본 동작</h2>
+<p>맨 위 [전체 이어듣기] 버튼을 누르면 직전에 듣기를 멈춘 위치부터 재생이 시작된다.<br>
+중간에 멈추려면 맨 위 [중지] 버튼을 누른다.</p>
+<p>그냥 이 앱에서는 이 버튼만 누른다고 생각하자.</p>
+<p>[전체 이어듣기] 버튼을 누르고 에피소드를 들으며 가만 놔두면 현재 에피소드 재생이 끝난 후 바로 위 에피소드가 재생된다. 그래서 그냥 놔두면 1화부터 가장 최신 에피소드까지 순서대로 쭉 재생된다. (작성일 현재 1화부터 최신 에피소드까지 전부 다 듣는데 약 115시간이 소요된다)</p>
+<p>[전체 이어듣기] 재생 중 맨 위 [중지] 버튼을 누르면 현재 위치가 현재 사용 중인 디바이스에 저장된다. 이 값은 해당 디바이스에만 저장되기 때문에 스마트폰에서 듣다가 PC에서 그 위치부터 이어듣는 등의 기능은 제공하지 않는다.</p>
+<br/>
+<h2 id="%EC%82%AC%EC%9A%A9%EB%B2%95">사용법</h2>
+<h3 id="%EC%A0%84%EC%B2%B4-%EC%9D%B4%EC%96%B4%EB%93%A3%EA%B8%B0">전체 이어듣기</h3>
+<p><img src="img/20250531210340.png" alt=""></p>
+<p>[전체 이어듣기] 버튼을 누르면 직전에 멈춘 위치부터 재생이 시작된다. 맨 처음 실행한 거면 1화부터 시작된다.</p>
+<p>1화 재생이 끝나면 자동으로 그 다음 화인 2화가 재생된다.</p>
+<p>가만 놔두면 3화, 4화... 가장 최신 에피소드까지 순차적으로 진행한다.</p>
+<br/>
+<h3 id="%EC%9E%A0%EA%B9%90-%EB%A9%88%EC%B6%94%EA%B8%B0">잠깐 멈추기</h3>
+<p><img src="img/20250531215450.png" alt=""></p>
+<p>[전체 이어듣기]를 눌러 재생이 시작되면 이 버튼이 [중지] 버튼으로 바뀐다</p>
+<p>현재까지 정식 에피소드만 159화, 약 115시간이 올라왔기 때문에 계속 듣고만 있을 수는 없을 것임. 재생을 잠깐 멈추려면 위와 같이 [중지] 버튼을 누른다.</p>
+<p>[중지] 버튼을 누르면 중지 버튼을 눌렀을 때의 재생시간 위치 정보가 디바이스에 저장된다. 저장되는 정보는 현재 에피소드 고유번호(guid)와 그 에피소드의 현재까지 재생된 시간(초)이다.</p>
+<p>예를 들어 157화를 19초까지 들었다면 <code>157화 19초</code> 와 같은 식으로 정보가 저장된다.</p>
+<p>[중지] 버튼을 누르면 재생이 중지되고 그 버튼이 다시 [전체 이어듣기]로 바뀐다.</p>
+<br/>
+<h3 id="%EB%8B%A4%EC%8B%9C-%EC%A0%84%EC%B2%B4-%EC%9D%B4%EC%96%B4%EB%93%A3%EA%B8%B0">다시 전체 이어듣기</h3>
+<p><code>157화 19초</code> 정보가 저장되어 있는 상태에서 [전체 이어듣기] 버튼을 누르면 allfilx는 157화 19초부터 재생을 시작한다. 이런 식으로 끊김없이 책플릭스 전체 에피소드를 다 들을 수 있다.</p>
+<br/>
+<h3 id="%EC%97%AC%EA%B8%B0%EB%B6%80%ED%84%B0-%EC%9D%B4%EC%96%B4%EB%93%A3%EA%B8%B0">여기부터 이어듣기</h3>
+<p><img src="img/20250531220518.png" alt=""></p>
+<p>특정 에피소드부터 듣고 싶을 때 사용한다. 역시 그 에피소드가 끝나면 자동으로 그 바로 위 에피소드가 재생된다.</p>
+<br/>
+<h3 id="%EC%96%B4%EB%8A%90-%ED%95%9C-%EC%97%90%ED%94%BC%EC%86%8C%EB%93%9C%EB%A7%8C-%EB%93%A3%EA%B8%B0">어느 한 에피소드만 듣기</h3>
+<p><img src="img/20250531220752.png" alt=""></p>
+<p>전체 이어듣기 중에 최신 에피소드가 올라와서 전체 이어듣기와 상관없이 듣고 싶을 때 사용하는 버튼. (하지만 그 때는 <a href="https://www.youtube.com/@%EC%B1%85%ED%94%8C%EB%A6%AD%EC%8A%A4_Youtube">유튜브</a>나 <a href="https://www.podbbang.com/channels/1776166">팟빵</a> 등으로 듣자. 이걸로 들으면 유의미한 조회수가 안 올라간다.)</p>
+<p>이 버튼을 누르면 전체 이어듣는 것과 관련없이 그냥 한 번 듣고 끝난다. 전체 이어듣는 위치와 전혀 관련이 없다. 그러니까 전체 이어듣기(정주행)하다 정주행에는 영향을 미치지 않고 어느 한 에피소드를 듣고 싶을 때 사용한다.</p>
+<br/>
+<h3 id="%EC%A0%84%EC%B2%B4-%EC%8B%9C%EA%B0%84">전체 시간</h3>
+<p><img src="img/20250531221536.png" alt=""></p>
+<p>전체 시간은 2개의 시간으로 구성되어 있다. / 으로 구분되어 있는데, / 뒷부분은 여태까지 나온 모든 에피소드의 각 재생시간을 모두 더한 값이다. 거의 115시간 분량이다.</p>
+<p>/ 앞부분은 전체 재생시간 중 어느만큼 듣고 있는지 보여주는 부분이다. 만약 157화를 재생하고 있다면 156화 까지의 재생시간의 총합 + 현재 재생하고 있는 157화의 현재 재생위치(예를 들면 01:15)를 더한 값을 보여준다.</p>
+<p>마지막 화까지(제작일 현재 159화) 다 들으면 현재 총 시간인 <code>114:35:54</code>를 넘는 값(예: <code>114:35:56</code>)이 나오는데 이건 매우 당연한 결과다.</p>
+<p>각 에피소드 정보에는 재생시간이 초단위로 적혀있다. 만약 55.4초 길이의 에피소드라면 이 에피소드의 재생시간은 55초로 적혀 있다. 이렇게 0.4초 같은 오차가 159화만큼 모이면 굉장히 큰 값이 된다.</p>
+<p>총 재생시간(<code>114:35:54</code>)은 <code>55.4초</code>를 <code>55초</code>로 보고 쭉 더한 결과이기 때문에 오차가 발생할 수 밖에 없다.</p>
+<p>그래서 / 앞부분에서 보여지는 현재 재생시간이 / 뒷부분에 보여지는 총 재생시간보다 더 커질 수 있.. 밖에 없다.</p>
+<br/>
+<h3 id="%EC%97%90%ED%94%BC%EC%86%8C%EB%93%9C-%EC%A0%95%EB%B3%B4%EB%B3%B4%EA%B8%B0">에피소드 정보보기</h3>
+<p><img src="img/20250531222618.png" alt=""></p>
+<p>제목 부분을 클릭하면 에피소드 정보를 볼 수 있다.</p>
+<p><img src="img/20250531222658.png" alt=""></p>
+<p>pc에서는 새로 열린 탭을 닫으면 창이 닫히고 스마트폰에서는 왼쪽 위의 X 표를 누르면 창이 닫힌다.</p>
+<br />
+<h3 id="%ED%98%84%EC%9E%AC-%EC%9C%84%EC%B9%98-%EC%9E%90%EB%8F%99-%EC%A0%80%EC%9E%A5">현재 위치 자동 저장</h3>
+<p>이 프로그램은 재생 시 약 10초 정도마다 한 번씩 현재 위치를 저장한다. 혹시라도 갑자기 핸드폰이 꺼지거나 비정상종료하는 경우를 대비하기 위해서다.</p>
+<br />
+<h2 id="%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9A%A9-%EC%95%B1%EC%9C%BC%EB%A1%9C-%EB%93%B1%EB%A1%9D%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0">윈도우용 앱으로 등록해서 사용하기</h2>
+<p>이 앱은 윈도우용 앱으로 등록해서 사용할 수도 있다. (feat. <a href="https://developer.mozilla.org/ko/docs/Web/Progressive_web_apps/Tutorials/js13kGames">PWA</a>)</p>
+<p><img src="img/20250531223118.png" alt=""></p>
+<p>크롬 브라우저에서 주소창 오른쪽의 저 버튼을 클릭하면,</p>
+<p><img src="img/20250531223155.png" alt=""></p>
+<p>이렇게 앱 설치 버튼이 나타난다.[설치 버튼]을 누르면 윈도우용 앱으로 등록되어 보통 윈도우용 앱처럼 사용할 수 있다.</p>
+<p><img src="img/20250531223417.png" alt=""></p>
+<p>윈도우 바탕화면에 아이콘이 생성된다.</p>
+<p><img src="img/20250531223445.png" alt=""></p>
+<p>윈도우 바탕화면에 생성된 아이콘을 더블클릭해 윈도우용 앱으로 실행한 모습</p>
+<br />
+<h2 id="%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%ED%8F%B0-%EC%9A%A9-%EC%95%B1%EC%9C%BC%EB%A1%9C-%EB%93%B1%EB%A1%9D%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0">안드로이드폰 용 앱으로 등록해서 사용하기</h2>
+<p>이 앱은 스마트폰용 앱으로 등록해서 사용할 수도 있다. (feat. <a href="https://developer.mozilla.org/ko/docs/Web/Progressive_web_apps/Tutorials/js13kGames">PWA</a>)</p>
+<img src='img/20250531204404.png' width='300px'> 
+<p>스마트폰에서도 주소(<a href="https://sobigd.github.io/allflix">https://sobigd.github.io/allflix</a>)를 타이핑할 수도 있지만 위 qr코드로 편하게 접속할 수 있다.</p>
+<p>안드로이드폰에서는 접속하고 나면 바로 아래와 같이 스마트폰용 앱으로 설치할지 여부를 물어본다.</p>
+<p><img src="img/20250531225711.png" alt=""></p>
+<p>만약 이 때 설치를 못햇다면 나중에 다시 스마트폰 앱으로 설치할 수 있다.</p>
+<p>크롬을 실행하고,</p>
+<p><img src="img/20250531230209.png" alt=""></p>
+<p>오른쪽 위 점 3개 버튼을 누른 다음,</p>
+<p><img src="img/20250531230400.png" alt=""></p>
+<p>[홈 화면에 추가] 버튼을 누른다.</p>
+<p><img src="img/20250531230645.png" alt=""></p>
+<p>그럼 화면 아랫부분에 앱으로 설치할지 그냥 바로가기만 만들지 결정할 수 있다.</p>
+<p><img src="img/20250531230750.png" alt=""></p>
+<p>설치를 선택하면 이렇게 앱을 설치할 수 있다.</p>
+<p><img src="img/20250531231101.png" alt=""></p>
+<p>스마트폰에 앱이 설치된다.</p>
+<br/>
+<h2 id="%EC%95%84%EC%9D%B4%ED%8F%B0%EC%95%84%EC%9D%B4%ED%8C%A8%EB%93%9C-%EC%9A%A9-%EC%95%B1%EC%9C%BC%EB%A1%9C-%EB%93%B1%EB%A1%9D%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0">아이폰/아이패드 용 앱으로 등록해서 사용하기</h2>
+<p>아이폰과 아이패드 모두 현재 최신의 ios가 설치되지 않는 오래된 버전만 가지고 있어 테스트가 제대로 되지 않고 있음. -.-;</p>
+<p>그래도 일단 아이폰에서의 일반적인 과정을 설명하면,</p>
+<p><img src="img/20250603010217.png" alt=""></p>
+<p>저 버튼을 클릭한다.</p>
+<p><img src="img/20250603010531.png" alt=""></p>
+<p>[홈 화면에 추가] 버튼을 누른다.</p>
+<p><img src="img/20250603010649.png" alt=""></p>
+<p>홈 화면에 추가하면 바탕화면에 아이콘이 생긴다.ㅎ</p>
+<br />
+<h2 id="%EB%B3%B4%EC%95%88">보안</h2>
+<p>이 앱은 웹에 접속해 mp3 파일을 재생하고 현재 위치를 저장한다. 현재 위치를 내 로컬 디바이스에 저장하는데 사용하는 기술은 <a href="https://developer.mozilla.org/ko/docs/Web/API/IndexedDB_API">indexeddb</a>이다.</p>
+<p>스마트폰에 설치하고 사용할 때도 아무런 권한을 요청하지 않는다.</p>
+<p>이 앱은 웹브라우저의 샌드박스 내에서만 자료를 생성, 사용하고 그 외의 자료는 전혀 건드리지 않는다. (태생적으로 불가능하다)</p>
+<p><img src="img/20250603014652.png" alt=""></p>
+<p>안드로이드폰에서 본 애플리케이션 정보. 사용하는 권한 없음.</p>
+<br />
+<h2 id="%EB%AC%B8%EC%A0%9C%EA%B0%80-%EC%83%9D%EA%B2%BC%EC%9D%84-%EB%95%8C">문제가 생겼을 때</h2>
+<h3 id="%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0%EC%97%90%EC%84%9C-%EC%9E%AC%EC%83%9D-%EC%A4%91%EC%97%90-%EC%A4%91%EB%8B%A8%EB%90%98%EC%97%88%EB%8B%A4">스마트폰에서 재생 중에 중단되었다.</h3>
+<p>시간이 지나 화면이 꺼지고 시간이 많이 지난 경우, 재생 중 중단되는 현상을 발견했다. 이렇게 되면 바로 제일 위 [중지] 버튼을 눌러 현재 위치를 저장하는 게 가장 좋은 방법이다. 그리고 바로 [전체 이어듣기] 버튼을 누르면 바로 이어 들을 수 있다.</p>
+<h3 id="%ED%98%84%EC%9E%AC-%EC%9C%84%EC%B9%98%EA%B0%80-%EC%A0%80%EC%9E%A5%EC%9D%B4-%EC%95%88-%EB%90%9C%EB%8B%A4">현재 위치가 저장이 안 된다.</h3>
+<ol>
+<li>
+<p>크롬 브라우저를 <code>게스트모드</code>나 <code>시크릿모드</code>에서 실행하면 현재 위치가 저장 안된다.</p>
+</li>
+<li>
+<p><code>게스트모드</code>나 <code>시크릿모드</code>가 아니더라도 <strong><a href="https://rangcoj.tistory.com/entry/%EA%B5%AC%EA%B8%80-%ED%81%AC%EB%A1%AC-%ED%94%84%EB%A1%9C%ED%95%84%EC%B6%94%EA%B0%80-%EB%B0%8F-%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0%EB%A7%8C%EB%93%9C%EB%8A%94%EB%B0%A9%EB%B2%95">크롬 브라우저의 프로필을 생성</a>해서 사용 중이어야 현재 위치가 제대로 저장</strong>된다. 크롬 브라우저의 프로필이 없으면 스마트폰을 껐다 켜거나 스마트폰의 현재 사용 중인 앱목록에서 없애면 현재 위치가 아무 곳에도 저장되지 않는다.</p>
+</li>
+</ol>
+<p><img src="img/20250603010901.png" alt=""></p>
+<p>이렇게 프로필이 없으면 현재 위치가 제대로 저장되지 않는다. 당장은 저장되는 것처럼 보이지만 스마트폰을 껐다 켜거나 앱목록에서(아이폰 홈버튼 두 번 누르기) 없애면 현재 위치 저장 정보가 사라진다.</p>
+<ol start="3">
+<li>크롬은 계정을 여러 개 설정할 수 있다. 각 계정마다 각각 현재 위치를 저장한다.</li>
+</ol>
+<h3 id="%ED%98%84%EC%9E%AC-%EC%9C%84%EC%B9%98-%ED%91%9C%EC%8B%9C%EA%B0%80-%EB%B6%80%EB%93%9C%EB%9F%BD%EC%A7%80-%EC%95%8A%EB%8B%A4">현재 위치 표시가 부드럽지 않다.</h3>
+<p>스마트폰 cpu 사용을 줄이기 위해 1초에 한 번씩만 현재 위치가 표현되도록 하고 있기 때문이다. ? 당연한 말인 듯 싶지만 실제로는 부드럽게 표현하려면 3/10초 ~ 1/10 마다 한 번씩 현재 위치를 표현해야 부드럽게 표현된다.</p>
+<h3 id="%EB%8B%A4%EB%A5%B8-%EC%82%AC%EB%9E%8C%EA%B3%BC-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EB%B2%84%EC%A0%84%EC%9D%B4-%EB%8B%A4%EB%A5%B4%EB%8B%A4%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%AC%B8%EC%A0%9C">다른 사람과 프로그램 버전이 다르다(업데이트 문제)</h3>
+<p>프로그램 오른쪽 위에 버전 표시가 있다. (예: 0.63)</p>
+<p>프로그램을 새로 실행하면 자동으로 최신 버전으로 업데이트가 되어야 하는데 그렇지 않고 끝내 업데이트가 되지 않는 경우도 있다.</p>
+<p>안드로이드 폰이라면 스크롤을 밑으로 내려 최신 에피소드가 보이도록 한 다음 다시 한 번 스크롤을 밑으로 당겨 목록 업데이트가 되도록 해보자. 그럼 업데이트가 될 수 있다.</p>
+<p>이래도 안된다면 프로그램을 삭제하고 크롬에서 모든 캐시를 삭제한 다음(다른 사이트들 자동 로그인 정보까지 다 날아가는 것 유의) 다시 <a href="https://sobigd.github.io/allflix">allflix 사이트</a>로 접속하면 최신 버전을 다운로드 받을 수 있다.</p>
+<br/>
+<h2 id="%EA%B0%80%EA%B2%A9">가격</h2>
+<p>존경하는 프로그램인 <a href="https://www.blender.org">blender</a>에서 인용.</p>
+<p>free, forever</p>
+<br/>
+<h2 id="%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4">라이선스</h2>
+<p><a href="https://ccl.cckorea.org/about"><img src="img/20250603000717.png" alt=""></a></p>
+<p>이 앱에 대해서만이며 팟캐스트 음원 자체에 대해서는 책플릭스에 문의.</p>
+<br />
+<h2 id="%EC%9D%B4-%EC%95%B1%EC%9D%B4-%EA%B0%80%EB%8A%A5%ED%95%9C-%EA%B8%B0%EC%88%A0%EC%A0%81%EC%9D%B8-%EB%AA%87%EB%AA%87-%EC%9D%B4%EC%9C%A0">이 앱이 가능한 기술적인 몇몇 이유</h2>
+<ul>
+<li>
+<p>책플릭스 측에서 1화부터 현재까지의 모든 에피소드를 전부 rss로 제공<br>
+(최근 10개만 식으로 제공하는 곳도 많은데)</p>
+</li>
+<li>
+<p>책플릭스 측에서 CORS 제한을 걸지 않음. (사실 팟캐스트에는 아무 의미없는 데도 CORS 제한을 걸어서 좀 더 비싼 웹호스팅을 사용하게끔 하는 곳도 많음.)</p>
+</li>
+</ul>
+
+</body>
+</html>
