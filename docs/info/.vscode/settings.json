@@ -1,8 +1,0 @@
-{
-    "markdown-pdf.styles": [
-        "pdf.css"
-    ],
-    "markdown-pdf.stylesRelativePathFile": true,
-    "markdown-pdf.markdown-it-include.enable": true,
-    "markdown-pdf.includeDefaultStyles": false
-}
